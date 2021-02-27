@@ -3,7 +3,7 @@
     "meta": {
         "version": "PTDL_v1"
     },
-    "exported_at": "2021-02-27T10:31:17+01:00",
+    "exported_at": "2021-02-27T10:33:40+01:00",
     "name": "CS 1.6",
     "author": "hembi@hungarycs.hu",
     "description": "CS 1.6 Steam server egg.\r\nCounter-Strike: 1.6 is a multiplayer first-person shooter video game developed by Valve Corporation.",
@@ -12,7 +12,7 @@
     "startup": ".\/hlds_run -pidfile hlds_{{SERVER_PORT}} -game cstrike -{{SRV_SECURE}} +port {{SERVER_PORT}} +sv_lan 0 +maxplayers {{SRV_SLOTS}} +map {{SRV_STARTMAP}} +sys_ticrate 1200 -pingboost {{SRV_PINGBOOST}} -norestart",
     "config": {
         "files": "{}",
-        "startup": "{\r\n    \"done\": \"STEAM Auth Server\",\r\n    \"userInteraction\": []\r\n}",
+        "startup": "{\r\n    \"done\": \"Connection to Steam servers successful.\",\r\n    \"userInteraction\": []\r\n}",
         "logs": "{\r\n    \"custom\": true,\r\n    \"location\": \"logs\/latest.log\"\r\n}",
         "stop": "quit"
     },
